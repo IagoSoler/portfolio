@@ -1,0 +1,45 @@
+.quizzical {
+  display: flex; /* Cambiar el contenedor a un contenedor flex */
+  flex-direction: column; /* Asegurar que los elementos se apilen verticalmente */
+  justify-content: center; /* Centrar los elementos verticalmente */
+  align-items: center; /* Centrar los elementos horizontalmente */
+  text-align: center;
+  color: white;
+  min-height: 100vh;
+}
+.quizzical__answer--button {
+  background-color: #4c5baf; /* Color de fondo verde */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 15px 32px; /* Espaciado interno */
+  text-align: center; /* Centrar texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Mostrar como bloque en línea */
+  font-size: 16px; /* Tamaño de fuente */
+  margin: 4px 2px; /* Margen */
+  cursor: pointer; /* Cambiar cursor al pasar el mouse */
+  border-radius: 12px; /* Bordes redondeados */
+  transition: background-color 0.3s; /* Transición suave */
+}
+
+
+.quizzical__submit--button{
+  background-color: #992fc4; /* Color de fondo verde */
+}
+.quizzical__selected{
+  background-color: #01168b;
+}
+.quizzical__correct{
+  background-color: aqua;
+}
+.quizzical__incorrect{
+  background-color: red;
+}
+.quizzical__questions {
+  background-color: #0c0b0b; /* Color de fondo claro */
+  border: 1px solid #ddd; /* Borde gris claro */
+  padding: 20px; /* Espaciado interno */
+  margin: 10px 0; /* Margen superior e inferior */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}

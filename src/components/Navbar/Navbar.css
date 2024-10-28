@@ -1,0 +1,131 @@
+.navbar {
+  /* ------------------------- */
+  position: sticky;
+  top: 0;
+  background-color: rgba(18, 18, 18, 0.95); 
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar--name {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  
+}
+.navbar--name--image {
+  width: 30px;
+  height: 30px; 
+  border-radius: 15px;
+  margin-right: 5px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.navbar--language{
+  display: flex;
+  justify-content: center;
+  width: 10%;
+  align-items: center;
+}
+
+
+.navbar--language--flag{
+width: 15px;
+height: 15px; 
+margin-right: 10px;
+}
+.navbar--contact {
+  display: flex;
+  justify-content: center;
+  width: 10%;
+  align-items: center;
+  
+  gap: 20px;
+}
+.navbar--contact--linkedin__image {
+  width: 30px;  
+  height: 30px;  
+}
+
+.navbar--contact--github__image {
+  width: 40px;  
+  height: 40px;  
+}
+.navbar li {
+  padding: 1rem;
+  /*                            */
+  width: 100px; 
+  height: 40px; 
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #e0e0e0; 
+  transition: all 0.3s ease;
+  width: 100%; 
+  height: 100%;
+}
+
+.navbar button:hover {
+  color: #64ffda;  
+  transform: translateY(-2px);  
+}
+
+.navbar button.active {
+  color: #64ffda;
+  font-weight: bold;
+  border: 2px solid turquoise;
+}
+
+
+.navbar--name p {
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+.navbar--language--selector {
+  width: 80%;
+  height: 40%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 0px 8px;
+  
+}
+
+.navbar--language--selector:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.navbar--language--selector option {
+  background-color: #1a1a1a;  
+  color: #e0e0e0;
+  padding: 8px;
+}
+
+.navbar--contact a {
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.navbar--contact a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}

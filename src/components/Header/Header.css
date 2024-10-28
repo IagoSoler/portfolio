@@ -1,0 +1,42 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,0,52,1) 100%);
+    width: 100%;
+    gap: 5%;
+}
+.header--image{
+    width: 300px;
+    height:300px;
+    border-radius:150px;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+.header--title{
+    text-align: justify;  
+    width: 50%;
+}
+.header--title--text{
+    font-size: 3rem;
+
+     
+}
+.header--subtitle{
+    font-size: 1.5rem;
+     
+   
+}
+.header--contact__button{
+    width: 15%;
+    background-color: transparent;
+    color:turquoise;
+    border-color: turquoise;
+    padding: 10px;
+    border-radius: 15px;
+   
+}
