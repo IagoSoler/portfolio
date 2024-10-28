@@ -8,7 +8,7 @@ Este es mi portfolio web, desarrollado como parte de mi formación en el Ciclo F
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
 - [Instalación](#instalación)
 - [Uso](#uso)
-- [Licencia](#licencia)
+
 
 ## Características
 
