@@ -1,16 +1,19 @@
 import React from 'react'
 import './Projects.css'
-import projectsData from './ProjectsData.js'
+import {spanish, english} from '../../data/ProjectsData'
+import { chooseLanguage } from '../../utils/otherUtils';
 
-const Projects = () => {
+const Projects = ({language}) => {
+  const textData = chooseLanguage(language, english, spanish);
   const projectsElements = () => {
-    return projectsData.map(item => (
-      <div className='projects__card'
+    
+    return textData.projects.map(item => (
+      <div className='projects--card'
         key={item.title}
         onClick={() => window.open(item.link, '_blank')}
-        style={{ cursor: 'pointer' }}>
+        >
         <h3>{item.title}</h3>
-        <img className='projects__card--image' src={require('./projects_images/' + item.image)} alt={item.title + " image"} />
+        <img className='projects--card--image' src={item.image} alt={item.title + " image"} />
         <p>{item.description}</p>
       </div>
     ));
@@ -18,8 +21,8 @@ const Projects = () => {
 
   return (
     <div id="projects">
-      <h1>Algunos de mis proyectos e ideas:</h1>
-      <div className='projects__grid'>
+      <h1>{textData.title}</h1>
+      <div className='projects--grid'>
         {projectsElements()}
       </div>
     </div>

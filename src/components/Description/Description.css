@@ -2,9 +2,7 @@
     width: 80%;
     display: flex;
     flex-direction: column;
-    gap: 150px;
-    margin-top: 40px;
-   
+    margin-top: 80px;
 }
 .description--portfolio{
     display: flex;
@@ -12,7 +10,6 @@
     justify-content: left;
     align-items: center;
     margin-left: 20%;
-
 }
 .description--text{
     font-size: 150%;
@@ -23,14 +20,18 @@
     height: 30%;
     margin-left: 100px;
     margin-right: 100px;
-
-
 }
 .description--button{
-    width: 15%;
+    width: 150px;
     background-color: transparent;
     color:turquoise;
     border-color: turquoise;
     padding: 10px;
     border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+.description--button:hover{
+    background-color: rgba(64, 224, 208, 0.8); 
+    color: white;
 }

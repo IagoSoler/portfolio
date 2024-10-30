@@ -1,10 +1,12 @@
 import React from 'react'
 import './Skills.css'
-import skillsData from './SkillsData.js'
+import {spanish,english} from '../../data/SkillsData'
 import SkillsCard from './SkillsCard.jsx'
-
-const Skills = () => {
-  const skillsElements = (skillsArray) => {
+import { chooseLanguage } from '../../utils/otherUtils';
+const Skills = ({language}) => {
+  const textData = chooseLanguage(language, english, spanish);
+const skillsElements = (skillsArray) => {
+    
     return skillsArray.map(item => (
       <SkillsCard
         key={item.title}
@@ -18,17 +20,17 @@ const Skills = () => {
 
   return (
     <div id="skills">
-      <h1>Idiomas</h1>
+      <h1>{textData.languagesTitle}</h1>
       <div className='skills__grid'>
-        {skillsElements(skillsData.languages)}
+        {skillsElements(textData.languages)}
       </div>
-      <h1>Frontend</h1>
+      <h1>Frontend:</h1>
       <div className='skills__grid'>
-        {skillsElements(skillsData.frontend)}
+        {skillsElements(textData.frontend)}
       </div>
-      <h1> Backend y otras tecnologías </h1>
+      <h1>{textData.backendTitle}</h1>
       <div className='skills__grid'>
-        {skillsElements(skillsData.backend)}
+        {skillsElements(textData.backend)}
       </div>
     </div>
   );

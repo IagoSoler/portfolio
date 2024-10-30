@@ -1,20 +1,11 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Intro from "./components/Intro/Intro";
-import Header from "./components/Header/Header";
-import Navbar from "./components/Navbar/Navbar";
-import About from "./components/About/About";
-import Skills from "./components/Skills/Skills";
-import Projects from "./components/Projects/Projects";
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
-import Quizzical from "./components/Quizzical/Quizzical";
-import Description from "./components/Description/Description";
-import Career from "./components/Career/Career";
+import { Intro, Header, Navbar, About, Skills, Projects, Contact, Quizzical, Description, Career } from "./components"; 
 
 function App() {
   const [language, setLanguage] = useState("");
+  console.log(language)
 
   return (
     <Router>
@@ -26,15 +17,15 @@ function App() {
               {!language && <Intro setLanguage={setLanguage} />}
               {language && (
                 <div className="App">
-                  <Header />
+                  <Header language={language} />
                   <Navbar setLanguage={setLanguage} language={language} />
-                  <About />
-                  <Career/>
-                  <Skills />
-                  <Description/>
-                  <Projects />
-                  <Contact />
-                  <Footer />
+                  <About language={language}/>
+                  <Career language={language}/>
+                  <Skills language={language} />
+                  <Description language={language}/>
+                  <Projects language={language} />
+                  <Contact language={language} />
+                 
                 </div>
               )}
             </>

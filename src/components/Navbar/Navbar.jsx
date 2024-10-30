@@ -1,17 +1,15 @@
 import React from 'react';
 import './Navbar.css';
-import myPhoto from '../Header/header_images/myphoto.PNG'
-import spanishFlag from '../Intro/intro_images/spain_flag.png'
-import englishFlag from '../Intro/intro_images/uk_flag.png'
-import githubLogo from '../Contact/contact_images/github_logo.png';
-import linkedinLogo from '../Contact/contact_images/linkedin_logo.png';
+import myPhoto from '../../assets/header_images/myphoto.PNG'
+import githubLogo from '../../assets/contact_images/github_logo.png';
+import linkedinLogo from '../../assets/contact_images/linkedin_logo.png';
 import NavbarLinks from './NavbarLinks';
+import { chooseLanguage } from '../../utils/otherUtils';
+import {spanish, english} from '../../data/NavbarData'
 
 
 const Navbar = ({ setLanguage, language }) => {
-
-  const flagSrc = language === 'spanish' ? spanishFlag : englishFlag;
-
+const textData = chooseLanguage(language, english, spanish);
   return (
     <nav className="navbar">
       <div className='navbar--name'>
@@ -19,13 +17,13 @@ const Navbar = ({ setLanguage, language }) => {
         <p>Iago Soler veira</p>
       </div>
 
-      <NavbarLinks />
+      <NavbarLinks language={language} />
 
       <div className='navbar--language'>
-        <img className='navbar--language--flag' src={flagSrc} alt={language + "Flag"} />
-        <select className='navbar--language--selector' onChange={(e) => setLanguage(e.target.value)}>
-          <option value="spanish"> Español</option>
-          <option value="english">Inglés</option>
+        <img className='navbar--language--flag' src={textData.flagSrc} alt={language + "Flag"}  />
+        <select className='navbar--language--selector'value={language}  onChange={(e) => setLanguage(e.target.value)}>
+          <option value="spanish"> {textData.selectorOption1}</option>
+          <option value="english">{textData.selectorOption2}</option>
         </select>
       </div>
 

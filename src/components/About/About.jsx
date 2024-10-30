@@ -1,30 +1,29 @@
 import React from 'react'
 import './About.css'
+import { chooseLanguage } from '../../utils/otherUtils';
+import {spanish, english} from '../../data/AboutData'
 
-import searchIcon from './about_images/search_icon.png'
-const About = () => {
+import searchIcon from '../../assets/about_images/search_icon.png'
+const About = ({language}) => {
+  const textData = chooseLanguage(language, english, spanish);
   return (
-    <div id="about" className='about'>
+    
+    <div id="about" >
+      <div className='about'>
         <div className='about--text'>
-          <h2>Mi situación actual:</h2>
+          <h2>{textData.title}</h2>
           <p>
-            Estoy estudiando el  Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web(DAW).
-            Actualmente estoy buscando una empresa donde realizar las prácticas curriculares
-            correspondientes. Actualmente vivo en Oleiros, A Coruña.
+          {textData.firstParragraph}
           </p>
           <h4>
-            Qué busco:
+          {textData.secondTtitle}
           </h4> <p>
-            Cualquier empresa que se relacione con ese sector, sea su actividad presencial o en remoto.
-            Por supuesto se agradece que exista un entorno agradable para el aprendizaje
-            y desarrollo de competencias correspondientes.
+          {textData.secondParragraph}
           </p>
         </div>
         <img className='about--image' src={searchIcon} alt="Search Icon" />
-      
-
+      </div>
     </div>
-
   )
 }
 

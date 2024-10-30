@@ -6,12 +6,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: absolute; /* Añadido para posicionar el intro sobre otros elementos */
-    top: 0; /* Asegura que esté en la parte superior */
-    left: 0; /* Asegura que esté alineado a la izquierda */
-    right: 0; /* Asegura que esté alineado a la derecha */
-    bottom: 0; /* Asegura que ocupe toda la altura */
-    z-index: 10; /* Añadido para que esté por encima de otros elementos */
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    z-index: 10; 
 }
 
 .intro__text {
@@ -74,7 +74,7 @@
         transform: translateX(0);
     }
 }
-/* ... existing styles ... */
+
 
 
 
