@@ -18,7 +18,7 @@ export const StartMenu = (props) => {
     return (
         <div className='quizzical__startmenu'>
             <h1>Quizzical</h1>
-            <button className='quizzical__submit--button quizzical__answer--button' onClick={handleStartClick}>Start Quiz</button>
+            <button className='quizzical--submit__button quizzical--answer__button' onClick={handleStartClick}>Start Quiz</button>
         </div>
     )
 }

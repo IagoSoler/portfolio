@@ -11,6 +11,7 @@ import galiciaIcon from '../assets/skills_images/Galicia_icon.PNG';
 
 
 export const spanish = {
+  title:"Habilidades relevantes:",
   languagesTitle: "Mis idiomas:",
   backendTitle: "Backend y otras tecnologías:",
   frontend: [
@@ -70,6 +71,7 @@ export const spanish = {
   }  ]
 }
 export const english = {
+  title:"Relevant skills:",
   languagesTitle: "My languages:",
   backendTitle: "Backend and other technologies:",
   frontend: [

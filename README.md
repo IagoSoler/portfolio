@@ -11,7 +11,7 @@ Este es mi portfolio web, desarrollado como parte de mi formación en el Ciclo F
 
 
 ## Características
-
+- Diseño responsive.
 - Sección de introducción para escoger entre español e inglés.
 - Información sobre mi situación actual .
 - Detalles sobre mi carrera y formación.

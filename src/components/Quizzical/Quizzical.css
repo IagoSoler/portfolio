@@ -6,8 +6,18 @@
   text-align: center;
   color: white;
   min-height: 100vh;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,0,52,1) 100%);
 }
-.quizzical__answer--button {
+.quizzical--questions {
+  background-color: #0c0b0b; 
+  border: 1px solid #ddd; 
+  padding: 20px; 
+  margin: 10px 0; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  font-size: 1rem;
+}
+.quizzical--answer__button {
   background-color: #4c5baf;
   color: white; 
   border: none; 
@@ -15,29 +25,26 @@
   text-align: center;
   text-decoration: none; 
   display: inline-block;
-  font-size: 16px;
+  font-size: 1rem;
   margin: 4px 2px; 
   cursor: pointer; 
   border-radius: 12px; 
   transition: background-color 0.3s; 
 }
-.quizzical__submit--button{
+.quizzical--submit__button{
   background-color: #992fc4; 
 }
-.quizzical__selected{
+.quizzical--selected__option{
   background-color: #01168b;
 }
-.quizzical__correct{
+.quizzical--correct__blank__option{
+  background-color: rgb(132, 0, 255);
+}
+.quizzical--correct__option{
   background-color: aqua;
 }
-.quizzical__incorrect{
+
+.quizzical--incorrect__option{
   background-color: red;
 }
-.quizzical__questions {
-  background-color: #0c0b0b; 
-  border: 1px solid #ddd; 
-  padding: 20px; 
-  margin: 10px 0; 
-  border-radius: 8px; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-}
+

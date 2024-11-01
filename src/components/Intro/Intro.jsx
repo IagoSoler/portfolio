@@ -14,15 +14,15 @@ const Intro = ({ setLanguage }) => {
   };
   return (
     <div className='intro'>
-      <h1 className={`intro__text ${exiting ? 'exiting__right' : 'left'}`}>Elige tu idioma</h1>
-      <h1 className={`intro__text ${exiting ? 'exiting__left' : 'right'}`}>Choose your language</h1>
-      <div className={`intro__buttons ${exiting ? 'exiting__down' : 'entering__up'}`}>
-        <button className='intro__button' onClick={() => handleLanguageChange("spanish")}>
-          <img src={spanishFlag} alt='Bandera Española' className='intro__flag-icon' />
+      <h1 className={`intro--title ${exiting ? 'exiting__right' : 'left'}`}>Elige tu idioma</h1>
+      <h1 className={`intro--title ${exiting ? 'exiting__left' : 'right'}`}>Choose your language</h1>
+      <div className={`intro--buttons__container ${exiting ? 'exiting__down' : 'entering__up'}`}>
+        <button className='intro--buttons__container--button' onClick={() => handleLanguageChange("spanish")}>
+          <img src={spanishFlag} alt='Bandera Española' className='intro--button-flag' />
           Español
         </button>
-        <button className='intro__button' onClick={() => handleLanguageChange("english")}> 
-        <img src={englishFlag} alt='Bandera Española' className='intro__flag-icon' />
+        <button className='intro--buttons__container--button' onClick={() => handleLanguageChange("english")}> 
+        <img src={englishFlag} alt='Bandera Española' className='intro--button-flag' />
           English 
         </button>
       </div>

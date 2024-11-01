@@ -1,37 +1,58 @@
-#description{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
+#description {
+  max-width: 1200px;
+  margin-left: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.description--portfolio{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    margin-left: 20%;
+/* ----------------------------------------Tcontenedor de titulo, texto e imagen---------------------------------------- */
+.description--container {
+  text-align: justify;
 }
-.description--text{
-    font-size: 150%;
-    text-align: justify;
+.description--container h2 {
+  font-size: 2.5rem;
 }
-.description--portfolio--image{
-    width: 30%;
-    height: 30%;
-    margin-left: 100px;
-    margin-right: 100px;
+.description--container h4 {
+  font-size: 2rem;
 }
-.description--button{
-    width: 150px;
-    background-color: transparent;
-    color:turquoise;
-    border-color: turquoise;
-    padding: 10px;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease; 
+.description--container p {
+  font-size: 1.5rem;
 }
-.description--button:hover{
-    background-color: rgba(64, 224, 208, 0.8); 
-    color: white;
+.description--container--image {
+  width: 25%;
+  max-width: 300px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+/* ----------------------------------------Botón de contacto---------------------------------------- */
+.description--container--button {
+  width: 150px;
+  background-color: transparent;
+  color: turquoise;
+  border-color: turquoise;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.description--container--button:hover {
+  background-color: rgba(64, 224, 208, 0.8);
+  color: white;
+}
+/* ----------------------------------------Media Queries---------------------------------------- */
+@media (max-width: 768px) {
+  #description {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .description--container--image {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  #description {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }

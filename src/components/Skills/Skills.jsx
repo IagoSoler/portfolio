@@ -5,32 +5,20 @@ import SkillsCard from './SkillsCard.jsx'
 import { chooseLanguage } from '../../utils/otherUtils';
 const Skills = ({language}) => {
   const textData = chooseLanguage(language, english, spanish);
-const skillsElements = (skillsArray) => {
-    
-    return skillsArray.map(item => (
-      <SkillsCard
-        key={item.title}
-        title={item.title}
-        image={item.image}
-        description={item.description}
-        level={item.level}
-      />
-    ));
-  }
-
   return (
     <div id="skills">
-      <h1>{textData.languagesTitle}</h1>
-      <div className='skills__grid'>
-        {skillsElements(textData.languages)}
+      <h2>{textData.title}</h2>
+      <h4>{textData.languagesTitle}</h4>
+      <div className='skills--grid'>
+        <SkillsCard array={textData.languages}/>
       </div>
-      <h1>Frontend:</h1>
-      <div className='skills__grid'>
-        {skillsElements(textData.frontend)}
+      <h4>Frontend:</h4>
+      <div className='skills--grid'>
+      <SkillsCard array={textData.frontend}/>
       </div>
-      <h1>{textData.backendTitle}</h1>
-      <div className='skills__grid'>
-        {skillsElements(textData.backend)}
+      <h4>{textData.backendTitle}</h4>
+      <div className='skills--grid'>
+      <SkillsCard array={textData.backend}/>
       </div>
     </div>
   );

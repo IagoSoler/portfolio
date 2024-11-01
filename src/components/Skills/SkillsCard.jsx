@@ -1,15 +1,18 @@
 import React from 'react'
 
-const SkillsCard = ({title,image,description,level}) => {
+const SkillsCard = ({ array }) => {
   return (
-    <div className='skills__card' >
-    <h3>{title}</h3>
-    <img className={`skills__card--image ${title}`} src={image} alt={title + " image"} />
-    <p>{description}</p>
-    <div className="skills__progress-bar">
-      <div className="skills__progress-fill" style={{width: `${level}%`}}></div>
-    </div>
-  </div>
+    array.map(item => (
+      <div className='skills--card' key={item.title} >
+        <h3>{item.title}</h3>
+        <img className={`skills--card--image ${item.title}`} src={item.image} alt={item.title + " image"} />
+        <p>{item.description}</p>
+        <div className="skills--progress__bar">
+          <div className="skills--progress__fill" style={{ width: `${item.level}%` }}></div>
+        </div>
+      </div>
+    )
+    )
   )
 }
 

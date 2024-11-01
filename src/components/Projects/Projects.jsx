@@ -8,12 +8,12 @@ const Projects = ({language}) => {
   const projectsElements = () => {
     
     return textData.projects.map(item => (
-      <div className='projects--card'
+      <div className='projects--grid--card'
         key={item.title}
         onClick={() => window.open(item.link, '_blank')}
         >
         <h3>{item.title}</h3>
-        <img className='projects--card--image' src={item.image} alt={item.title + " image"} />
+        <img className='projects--grid--card--image' src={item.image} alt={item.title + " image"} />
         <p>{item.description}</p>
       </div>
     ));
@@ -21,7 +21,7 @@ const Projects = ({language}) => {
 
   return (
     <div id="projects">
-      <h1>{textData.title}</h1>
+      <h2>{textData.title}</h2>
       <div className='projects--grid'>
         {projectsElements()}
       </div>

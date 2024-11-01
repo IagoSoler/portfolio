@@ -8,17 +8,15 @@ const Description = ({language}) => {
   const textData = chooseLanguage(language, english, spanish);
   return (
     <div id="description">
-      <div className='description--portfolio'>
-        <div className='description--text'>
+        <div className='description--container'>
           <h2>{textData.title}</h2>
           <p>{textData.firstParragraph} </p>
           <h4>{textData.firstSubtitle}</h4>
           <p>{textData.secondParragraph}  </p>
           <p>{textData.thirdParragraph} </p>
-          <button className='description--button' onClick={() => scrollToSection('contact', 55)}>{textData.contactButton} </button>
+          <button className='description--container--button' onClick={() => scrollToSection('contact', 55)}>{textData.contactButton} </button>
         </div>
-        <img className='description--portfolio--image' src={reactIcon} alt="React Icon" />
-      </div>
+        <img className='description--container--image' src={reactIcon} alt="React Icon" />
     </div>
   )
 }
