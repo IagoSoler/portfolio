@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Si la ruta comienza con /encuestas, no aplicar reglas de React
+  RewriteCond %{REQUEST_URI} !^/encuestas
+  
+  # Si el archivo o directorio existe, sírvelo directamente
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  
+  # Para todas las demás rutas, redirigir a index.html
+  RewriteRule . /index.html [L]
+</IfModule>
