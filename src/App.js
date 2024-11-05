@@ -5,7 +5,6 @@ import { Intro, Header, Navbar, About, Skills, Projects, Contact, Quizzical, Des
 
 function App() {
   const [language, setLanguage] = useState("");
-  console.log(language)
 
   return (
     <Router>
@@ -17,7 +16,7 @@ function App() {
               {!language && <Intro setLanguage={setLanguage} />}
               {language && (
                 <div className="App">
-                  <Header language={language} />
+                  <Header language={language}/>
                   <Navbar setLanguage={setLanguage} language={language} />
                   <About language={language}/>
                   <Career language={language}/>

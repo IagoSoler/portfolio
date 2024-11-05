@@ -8,6 +8,12 @@
     align-items: center;
     min-height: 100vh;
     gap: 5%;
+
+    transition: transform 1.1s ease; 
+}
+#header.hidden {
+    transform: translateY(-100%); /* Mover el encabezado fuera de la vista */
+   
 }
 .header--image{
     width: 25%;
@@ -21,20 +27,6 @@
 }
 .header--subtitle{
     font-size: 2rem;   
-}
-.header--contact__button{
-    width: 150px;
-    background-color: transparent;
-    color:turquoise;
-    border-color: turquoise;
-    padding: 10px;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-.header--contact__button:hover{
-    background-color: rgba(64, 224, 208, 0.8); 
-    color: white;
 }
 @media (max-width:768px){
     #header{

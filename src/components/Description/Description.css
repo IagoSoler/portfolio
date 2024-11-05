@@ -27,6 +27,7 @@
 }
 /* ----------------------------------------Botón de contacto---------------------------------------- */
 .description--container--button {
+  font-size: 0.9rem;
   width: 150px;
   background-color: transparent;
   color: turquoise;

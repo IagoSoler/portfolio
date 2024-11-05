@@ -16,11 +16,7 @@
   justify-content: center;
   gap: 2%;
 }
-.projects--grid--card {
-  background-color: rgb(4, 14, 13);
-  padding: 15px;
-  border-radius: 8px;
-  border: 3px solid turquoise;
+.projects--grid--project{
   width: calc(33.333% - 20px);
   height: 100%;
   box-sizing: border-box;
@@ -28,31 +24,54 @@
   cursor: pointer;
   margin: 2%;
 }
-.projects--grid--card:hover {
+.projects--grid--project--card {
+  background-color: rgb(4, 14, 13);
+  padding: 15px;
+  border-radius: 8px;
+  border: 3px solid turquoise;
+  margin-bottom: 30px;
+ 
+}
+.projects--grid--project--card:hover {
   transform: scale(1.5);
   z-index: 10;
 }
-.projects--grid--card h3 {
+.projects--grid--project--card h3 {
   font-size: 1.5rem;
 }
-.projects--grid--card p {
+.projects--grid--project--card p {
     font-size: 0.75rem;
   }
-.projects--grid--card--image {
+.projects--grid--project--card--image {
   width: 50%;
   height: 50%;
 }
+.projects--grid--project--card--button {
+  font-size: 0.9rem;
+  width: 150px;
+  background-color: transparent;
+  color: turquoise;
+  border-color: turquoise;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.projects--grid--project--card--button:hover {
+  background-color: rgba(64, 224, 208, 0.8);
+  color: white;
+}
 @media (max-width: 768px) {
-  .projects--grid--card {
-    width: 80%;
+  .projects--grid--project{
+    width: calc(50% - 20px); 
   }
-  .projects--grid--card:hover {
+  .projects--grid--project:hover {
     transform: scale(1);
   }
 }
 
 @media (max-width: 480px) {
-  .projects--grid--card {
+  .projects--grid--project {
     width: 100%;
   }
 }

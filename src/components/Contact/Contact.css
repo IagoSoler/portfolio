@@ -104,6 +104,14 @@
   width: 33%;
   gap: 15%;
 }
+.contact--social__media--container a {
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+.contact--social__media--container a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
 .contact--social__media--githubimage {
   width: 130%;
 }
