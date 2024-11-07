@@ -7,7 +7,7 @@
   align-items: center;
 }
 #projects h2 {
-  font-size: 2.5rem;
+  font-size: 2.5em;
   text-align: center;
 }
 .projects--grid {
@@ -37,17 +37,17 @@
   z-index: 10;
 }
 .projects--grid--project--card h3 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 .projects--grid--project--card p {
-    font-size: 0.75rem;
+    font-size: 0.75em;
   }
 .projects--grid--project--card--image {
   width: 50%;
   height: 50%;
 }
 .projects--grid--project--card--button {
-  font-size: 0.9rem;
+  font-size: 0.6em;
   width: 150px;
   background-color: transparent;
   color: turquoise;

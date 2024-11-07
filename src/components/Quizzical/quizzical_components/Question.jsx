@@ -12,8 +12,10 @@ export const Question = (props) => {
           <button
             className={`quizzical--answer__button ${answer === element.selectedAnswer ? "quizzical--selected__option" : ""}`}
             onClick={() => selectAnswer(element.question, answer)}
-            id={[element.question, answer]} key={[questionIndex, answerIndex]}>
-            {answer}</button>
+            id={[element.question, answer]} 
+            key={[questionIndex, answerIndex]}
+            dangerouslySetInnerHTML={{ __html: answer }}>
+            </button>
         ))}
       </div>
     )
@@ -46,7 +48,7 @@ export const Question = (props) => {
       {!submitted && <button id="submitButton" onClick={submitAnswers}
         className='quizzical--submit__button quizzical--answer__button' >Submit</button>}
       {submitted && <button id="restartButton" onClick={() => props.setQuizStarted(false)}
-        className='quizzical--submit__button quizzical--answer__button'>Restart</button>}
+        className='quizzical--submit__button quizzical--answer__button'>Play Again!</button>}
     </div>
 
   )

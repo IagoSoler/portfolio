@@ -8,11 +8,11 @@
   align-items: center;
 }
 #skills h2 {
-    text-align: center;
-  font-size: 2.5rem;
+  text-align: center;
+  font-size: 2.5em;
 }
 #skills h4 {
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 .skills--grid {
@@ -25,27 +25,25 @@
 /* -------------------------------------------------Tarjeta de habilidad-------------------------------------------------- */
 .skills--card {
   padding: 15px;
-  border-radius: 8px;
-  width: 20%;
+  width: 30%;
   box-sizing: border-box;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.skills--card h3{
-    font-size: 1.5rem;
+.skills--card h3 {
+  font-size: 1.5em;
 }
-.skills--card p{
-    font-size: 1rem;
+.skills--card p {
+  font-size: 1em;
 }
 .skills--card--image {
-  width: 100px;
-  height: 100px;
+  width: 40%;
 }
 .Gallego,
 .Galician {
-  border-radius: 50px;
+  border-radius: 100%;
 }
 /* -------------------------------------------------Barra de progreso-------------------------------------------------- */
 .skills--progress__bar {
@@ -64,12 +62,12 @@
 /* -------------------------------------------------Media Queries--------------------------------------------------- */
 @media (max-width: 768px) {
   .skills--card {
-    width: calc(50% - 20px);
+    width: 40%;
   }
 }
 
 @media (max-width: 480px) {
   .skills--card {
-    width: 100%;
+    width: 40%;
   }
 }

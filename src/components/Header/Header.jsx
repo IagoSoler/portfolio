@@ -15,13 +15,13 @@ const Header = ({ language}) => {
     const handleFirstScroll = (e) => {
       if (e.wheelDeltaY < 0 && isVisible) {
         
-        setIsVisible(false);
+        
         setTimeout(() => {
           scrollToSection('about');
         }, 100); 
 
         setTimeout(() => {
-          document.getElementById('header').style.display = 'none';
+          setIsVisible(false);
         }, 1000); 
         
       }

@@ -11,13 +11,13 @@
   text-align: justify;
 }
 .description--container h2 {
-  font-size: 2.5rem;
+  font-size: 2.5em;
 }
 .description--container h4 {
-  font-size: 2rem;
+  font-size: 2em;
 }
 .description--container p {
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 .description--container--image {
   width: 25%;
@@ -27,7 +27,7 @@
 }
 /* ----------------------------------------Botón de contacto---------------------------------------- */
 .description--container--button {
-  font-size: 0.9rem;
+  font-size: 0.6em;
   width: 150px;
   background-color: transparent;
   color: turquoise;
