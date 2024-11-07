@@ -15,7 +15,7 @@ export const spanish={
     {
       title: "Quizzical",
       image: quizzicalCover,
-      description: "Pequeño proyecto FrontEnd con llamada a API para preguntas estilo Trivia. Creado en React como un componente de la presente aplicación",
+      description: "Solo en ingés. Pequeño proyecto FrontEnd con llamada a API para preguntas estilo Trivia. Creado en React como un componente de la presente aplicación",
       link: "#/quizzical",
       githubButton: "Ver en Github",
       githubLink: "https://github.com/IagoSoler/Quizzical"  
@@ -28,7 +28,7 @@ export const english = {
     {
       title: "Survey Maker",
       image: encuestasCover,
-      description: "Online survey creator. BackEnd. Made with HTML, JavaScript, and PHP",
+      description: "Only in spanish. Online survey creator. BackEnd. Made with HTML, JavaScript, and PHP",
       link: "/encuestas/views/login.php",
       githubButton: "View in Github",
       githubLink: "https://github.com/IagoSoler/Creador-de-encuestas"
