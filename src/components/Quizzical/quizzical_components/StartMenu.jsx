@@ -75,7 +75,7 @@ export const StartMenu = ({ data, setData, setQuizStarted }) => {
             </button>
             
         </div>
-        <footer>Powered by <a href="https://opentdb.com/" target="_blank">https://opentdb.com/</a></footer>
+        <footer>Powered by <a href="https://opentdb.com/" target="_blank" rel="noreferrer" >https://opentdb.com/</a></footer>
         </>
     );
 }

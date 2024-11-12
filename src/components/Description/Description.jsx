@@ -1,6 +1,5 @@
 import React from 'react'
 import './Description.css'
-import { scrollToSection } from '../../utils/scrollUtils';
 import reactIcon from '../../assets/description_images/React_icon.PNG'
 import { chooseLanguage } from '../../utils/otherUtils';
 import { spanish, english } from '../../data/DescriptionData'

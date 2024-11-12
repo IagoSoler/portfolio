@@ -32,7 +32,7 @@ export const Question = (props) => {
     setSubmitted(true);
     props.data.forEach(element => {
       document.getElementById([element.question, element.correctAnswer]).classList.add("quizzical--correct__blank__option")
-      if (element.selectedAnswer && element.selectedAnswer == element.correctAnswer) {
+      if (element.selectedAnswer && element.selectedAnswer === element.correctAnswer) {
         document.getElementById([element.question, element.selectedAnswer]).classList.add("quizzical--correct__option")
       }
       if (element.selectedAnswer && element.selectedAnswer !== element.correctAnswer) {

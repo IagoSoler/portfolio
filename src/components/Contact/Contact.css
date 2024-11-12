@@ -114,9 +114,11 @@
 }
 .contact--social__media--githubimage {
   width: 130%;
+  min-width: 80px;
 }
 .contact--social__media--linkedinimage {
   width: 80%;
+  min-width: 80px;
 }
 .footer {
   background-color: black;
@@ -127,8 +129,12 @@
 }
 /* ----------------------------------------------MEdia Queries----------------------------------------------- */
 @media (max-width: 768px) {
-  .contact--social__media {
-    display: none;
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
   }
   .contact--nav  {
     display: none;
@@ -154,7 +160,18 @@
     align-items: center;
     margin-left: 0%;
   }
+  .contact--social__media--githubimage {
+    width: 100%;
+    min-width: 50px;
+    margin-right: 20px;
+  }
+  .contact--social__media--linkedinimage {
+    width: 60%;
+    min-width: 50px;
+    margin-left: 20px;
+  }
   .footer{
     margin-top: 5%;
+    text-align: center;
   }
 }

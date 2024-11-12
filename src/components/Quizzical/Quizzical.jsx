@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Quizzical.css";
 import { Question } from "./quizzical_components/Question";
 import { StartMenu } from "./quizzical_components/StartMenu";

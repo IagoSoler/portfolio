@@ -126,3 +126,18 @@
     display: none;
   }
 }
+@media (hover: none) {
+  .navbar button:hover {
+    color: var(--text-primary);
+    transform: translateY(0px);
+  }
+  .navbar--contact a:hover {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .navbar button.active {
+    color: var(--accent-color);
+    font-weight: bold;
+    border: 2px solid var(--accent-color); 
+  }
+}
