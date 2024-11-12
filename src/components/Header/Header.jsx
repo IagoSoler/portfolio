@@ -15,7 +15,7 @@ const Header = ({ language }) => {
   useEffect(() => {
     const handleScroll = (e) => {
       if (e.wheelDeltaY < 0 && isVisible) {
-        handleFirstScroll(setIsVisible, isVisible,110);
+        handleFirstScroll(setIsVisible, isVisible,55);
       }
     }
     document.addEventListener('wheel', handleScroll);
