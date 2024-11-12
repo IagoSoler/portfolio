@@ -11,6 +11,7 @@ const Career = ({ language }) => {
             <div className='career--text'>
                 <h2>{textData.title}</h2>
                 <p> {textData.parragraph} </p>
+                <br />
                 <a className='career--text--link' href="./CV/CV_IagoSolerVeira.pdf" download>{textData.downloadLink}</a>
             </div>
         </div>

@@ -117,13 +117,12 @@
     width: 100%;
   }
   .navbar--name,
-  .navbar--language,
   .navbar--contact {
     display: none;
   }
 }
 @media (max-width: 480px) {
-  .navbar {
+  .navbar--language {
     display: none;
   }
 }

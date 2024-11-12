@@ -23,3 +23,16 @@ export const handleScroll = (setActiveSection) => {
     setActiveSection(current);
 }
   };
+  export const handleFirstScroll = (setIsVisible,isVisible,isButton = false) => {
+    return (e) => {
+      console.log("asd")
+      if ((e.wheelDeltaY  < 0  || isButton) && isVisible) {
+        setTimeout(() => {
+          scrollToSection('about',100);
+        }, 100);
+        setTimeout(() => {
+          setIsVisible(false);
+        }, 1000);
+      }
+    };
+  };
